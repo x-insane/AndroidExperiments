@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:hint="GhostBlog RSSAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="4dp">
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radio_sax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SAX"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radio_pull"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pull"
+                android:checked="true"/>
+        </RadioGroup>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Go"
+            android:onClick="startSpider"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_url_json"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:hint="JSON RSSAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="4dp">
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radio_json"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="JSON"
+                android:checked="true"/>
+        </RadioGroup>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Go"
+            android:onClick="startSpiderForJSON"/>
+    </LinearLayout>
+
+</LinearLayout>

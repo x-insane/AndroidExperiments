@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    tools:context="com.xinsane.media.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送通知"
+        android:layout_marginTop="15dp"
+        android:onClick="onNotify"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送自定义通知"
+        android:layout_marginTop="15dp"
+        android:onClick="onCustomNotify"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去拍照"
+        android:layout_marginTop="15dp"
+        android:onClick="startPhotoActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去选照片"
+        android:layout_marginTop="15dp"
+        android:onClick="startChoosePhotoActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用摄像头"
+        android:layout_marginTop="15dp"
+        android:onClick="startScannerActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment测试"
+        android:layout_marginTop="15dp"
+        android:onClick="startFragmentActivity"/>
+
+</LinearLayout>
